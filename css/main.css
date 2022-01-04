@@ -1,15 +1,13 @@
 :root{
     --primary-color:#ff274b;
-    --secondary-color:#f7bcf7;
-    --light-color:#ffffff;
-    --second-color:#8e43e7;   
     --bgColor-1:#171a1c;
     --bgColor-2:#22282a;
+    --light-color:#ffffff;
+    --secondary-color:#701670;
     --padding: 40px;
     --fz-primary: 30px;
     --fz-secondary: 20px;
 }
-
 *{
   box-sizing: border-box;
   
@@ -31,7 +29,67 @@ span{
         font-size: 45px;
     }
 }
+/* box-sitting */
+.box-sitting{
+    width: 30%;
+    position: fixed;
+    background-color: var(--bgColor-2);
+    z-index: 5;
+    top: 10%;
+    left: 0;
+    height: 100vh;
+    margin-left: -31%;
+    transition: 0.5s;
+    padding: 10px;
+    color: var(--bgColor-1);
+    box-shadow: 0 0 2px var(--light-color)
+}
+@media (max-width: 767px){
+    .box-sitting{
+        width: 70%;
+    }
+}
+.box-sitting.open{
+    margin-left: 0%;
+}
 
+.box-sitting .toggle i{
+    padding: 7px;
+    position: absolute;
+    margin-left: 101%;
+    margin-top: 18px;
+    background-color: var(--bgColor-2);
+    color: white;
+    border-radius: 0px 12px 12px 0px;
+}
+.color-sitting{
+    padding: 10px;
+    color: var(--light-color);
+}
+.style{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px
+}
+.style.active{
+    background-color: var(--bgColor-1);
+    box-shadow: 0 0 5px 5px var(--primary-color);
+}
+.style h4{
+    width: fit-content;
+    font-size: 24px;
+    margin: 0;
+}
+.style .color{
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 2px;
+}
+    
+
+/* box-sitting */
 /* aaaaaaaaaa */
 .home{
     background-color: var(--bgColor-1);
@@ -198,10 +256,7 @@ padding-bottom: var(--padding);
     width: 100%;
     transition: 0.6s;
 }
-/* .services .card:hover{
-    transform: translateY(-12px);
-    transition: 0.5s;
-} */
+
 .services .card i{
     font-size: 45px;
     color: var(--primary-color);
@@ -211,8 +266,6 @@ padding-bottom: var(--padding);
     font-size: 24px;
 }
 .services .card .card-text{
-
-    color: var(--secondary-color);
     padding: 10px;
 }
 /* end services */
@@ -258,7 +311,7 @@ padding-bottom: var(--padding);
     border-radius: 17%;
     position: fixed;
     bottom: 10%;
-    right: 5%;
+    right: 2%;
 }
 .up i {
     font-size: 46px;
