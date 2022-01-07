@@ -5,7 +5,7 @@ let iconSitting=document.querySelector('.toggle i');
 iconSitting.onclick=()=>{
     boxSitting.classList.toggle('open')
 }
-// color siting
+// color siting and Add to local storage
 let styleC=document.querySelectorAll('.style');
 
 styleC.forEach(function (s) {
@@ -41,7 +41,6 @@ styleC.forEach(function(s,index){
     document.documentElement.style.setProperty('--primary-color',getLocal[2]);
     document.documentElement.style.setProperty('--light-color',getLocal[3]);
     });
-
 function switchColors(cssColor,array,n) {
     document.documentElement.style.setProperty(cssColor,array[n].dataset.color);
 }
