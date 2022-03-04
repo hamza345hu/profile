@@ -14,6 +14,7 @@
 }
 body{
     font-family: Jost, sans-serif !important;
+    background-color: var(--bgColor-1) !important;
     color: var(--light-color) !important;
 }
 span{
@@ -31,15 +32,10 @@ span{
 }
 
 /* aaaaaaaaaa */
-.home{
-    background-color: var(--bgColor-1);
-    color: var(--light-color) ;
-
-}
 .navbar{
+    background-color: var(--bgColor-1);
     position: fixed !important;
     width: 100%;
-    background-color: var(--bgColor-1);
     z-index: 2;
 }
 .navbar-light .navbar-brand{
@@ -112,6 +108,7 @@ span{
 .ball.move{
     left: 45%;
 }
+
 /*end mode */
 .landing{
     height: fit-content;
@@ -181,14 +178,6 @@ padding-bottom: var(--padding);
     display: flex;
     margin: auto;
 }
-/* .container{
-    overflow: hidden;
-}
-.about .about-text{
-    position: relative;
-    right: -100%;
-    transition: 0.2s;
-} */
 
 @media (max-width: 767px){
     .about{
@@ -207,7 +196,6 @@ padding-bottom: var(--padding);
 /* end about */
 /* start services */
 .services{
-    background-color: var(--bgColor-1);
     padding-top: var(--padding);
     padding-bottom: var(--padding);
 }
@@ -300,12 +288,10 @@ padding-bottom: var(--padding);
 /* end to top */
 /* start contact */
 .contact{
-    background-color: var(--bgColor-1);
     padding-top: var(--padding);
     padding-bottom: var(--padding);
 }
 .contact .container form{
-    background-color: var(--bgColor-1);
     display: flex;
     flex-direction: column;
     width: 50%;
