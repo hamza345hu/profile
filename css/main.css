@@ -29,86 +29,7 @@ span{
         font-size: 45px;
     }
 }
-/* box-sitting */
-.box-sitting{
-    width: 30%;
-    position: fixed;
-    background-color: var(--bgColor-2);
-    z-index: 5;
-    top: 10%;
-    left: 0;
-    height: 100vh;
-    margin-left: -31%;
-    transition: 0.5s;
-    padding: 10px;
-    color: var(--bgColor-1);
-    box-shadow: 0 0 2px var(--light-color)
-}
-@media (max-width: 767px){
-    .box-sitting{
-        width: 70%;
-        margin-left: -71%;
-    }
-}
-/* @media (min-width: 1100px){
-    .box-sitting{
-        width: 70%;
-        margin-left: -71%;
-    }
-} */
-.box-sitting.open{
-    margin-left: 0%;
-}
 
-.box-sitting .toggle i{
-    padding: 7px;
-    position: absolute;
-    margin-left: 101%;
-    margin-top: 18px;
-    background-color: var(--bgColor-2);
-    color: var(--light-color);
-    border-radius: 0px 12px 12px 0px;
-    font-size: 24px;
-}
-.color-sitting{
-    color: var(--light-color);
-}
-/* .color-sitting .btn-group ,
-.color-sitting .dropdown-menu{
-    width: 100% !important;
-    background-color: var(--bgColor-1) !important;
-    color: var(--light-color) !important;
-}
-.color-sitting .btn-group .btn-secondary {
-    color: var(--light-color) !important;
-    background-color: var(--secondary-color) !important;
-    border-color: var(--secondary-color) !important;
-    font-weight: bold;
-} */
-.style{
-    background-color: var(--secondary-color);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px
-}
-.style.active{
-    background-color: var(--bgColor-1);
-    box-shadow: 0 0 5px 5px var(--primary-color);
-}
-.style h4{
-    width: fit-content;
-    font-size: 24px;
-    margin: 0;
-}
-.style .color{
-    width: 24px;
-    height: 25px;
-    border-radius: 50%;
-    margin: 2px;
-}
-    
-
-/* box-sitting */
 /* aaaaaaaaaa */
 .home{
     background-color: var(--bgColor-1);
@@ -128,6 +49,7 @@ span{
 }
 .navbar i{
     color: var(--light-color);
+    font-size: 30px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
@@ -138,7 +60,7 @@ span{
 }
 .navbar-light .navbar-nav .nav-link{
     font-size: 15px;
-    padding-right: 30px !important;
+    padding-right: 25px !important;
     color: var(--light-color) !important ;
 }
 .navbar-light .navbar-nav .navLink-active{
@@ -153,7 +75,44 @@ span{
     }
 
 }
-
+/*start mode */
+.mode{
+    background-color: var(--light-color);
+    width: 60px;
+    height: 23px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+}
+@media (min-width: 767px){
+    .mode{
+        order: 3;
+    }
+}
+.mode i{
+    color: #f0b12c;
+    font-size: 19px;
+}
+ .mode .ball{
+    position: absolute;
+    left: 3%;
+    width: 31px;
+    height: 22px;
+    border-radius: 39%;
+    background-color: var(--bgColor-2);
+    z-index: 2; 
+    transition: 0.3s ease;
+}
+.ball.move{
+    left: 45%;
+}
+/*end mode */
 .landing{
     height: fit-content;
     padding: 100px 0;
